@@ -1,0 +1,80 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: #222;
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  
+}
+/* 
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
+.carousel__prev,
+.carousel__next {
+  box-sizing: content-box;
+  border: 5px solid white;
+  color: #000 !important;
+  font-size: 18px !important;
+}
+.carousel__pagination-button::after {
+  background-color: rgb(189, 189, 189) !important;
+  width: 4px !important; 
+  height: 4px !important;
+  border-radius: 50% !important;
+}
+.carousel__pagination-button:hover::after, .carousel__pagination-button--active::after {
+  background-color: #000 !important;
+}
+.btns {
+  font-weight: 600;
+}
+
+.vue-notification {
+  margin: 0 5px 5px;
+  padding: 10px;
+  font-size: 12px;
+  color: #ffffff;
+
+  background: #44a4fc;
+  border-left: 5px solid #187fe7;
+
+  &.success {
+    background: #68cd86;
+    border-left-color: #42a85f;
+  }
+
+  &.warn {
+    background: #ffb648;
+    border-left-color: #f48a06;
+  }
+
+  &.error {
+    background: #e54d42;
+    border-left-color: #b82e24;
+  }
+}
+#tradingview iframe{
+  min-height: 450px;
+}

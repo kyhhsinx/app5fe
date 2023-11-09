@@ -1,0 +1,80 @@
+
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-h1: #fd9e00;
+    --bg-btn: #fd9e00;
+    --btn-text: #000;
+    --cl-text-btn: #000;
+    --cl-text1: #4d5565;
+    --cl-text2: #000;
+    --main-text: #222;
+    --bg-cl: #000;
+    --bg-banner: #1f2630;
+    --bg-input: #EEEFF0;
+    --coin-up: #47CC85;
+    --coin-down: #F93636;
+    --bg-ft: #000;
+    
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: 400;
+}
+
+/* fonts */
+
+
+
+body {
+  min-height: 100vh;
+  color:var(--sub-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+input:focus {
+  outline-style: dashed;
+  outline-color: #fd9e00;
+  outline-width: 1.5px;
+}
+.lhWEYW{
+  right: 0 !important;
+} 
+#meiqia_custorm {
+  position: relative;
+  z-index: -1;
+}
+#meiqia-container {
+  overflow: hidden;
+  height: 0;
+}
+
